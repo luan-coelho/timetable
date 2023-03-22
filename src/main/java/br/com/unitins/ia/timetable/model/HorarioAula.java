@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DiaDisponivel {
+public class HorarioAula {
 
     private Disciplina disciplina;
     private DiaSemana diaSemana;

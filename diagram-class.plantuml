@@ -1,0 +1,37 @@
+@startuml
+
+class Disciplina {
+   - nome: String
+}
+
+class Professor {
+    - nome: String
+}
+
+class DiaDisponivel {
+}
+
+enum DiasSemana {
+    + SEGUNDA
+    + TERCA
+    + QUARTA
+    + QUINTA
+    + SEXTA
+    + SABADO
+}
+
+enum Turno {
+    + MATUTINO
+    + VESPERTINO
+}
+
+
+Disciplina "*" o-> "1" Turno
+Professor "*" o-> "1" DiasSemana
+Professor "*" o-> "1" Turno
+Professor --> "*" DiaDisponivel
+
+DiaDisponivel -down-> Turno
+DiaDisponivel "*" o-> "1" DiasSemana
+
+@enduml

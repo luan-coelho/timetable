@@ -1,6 +1,5 @@
 package br.com.unitins.ia.timetable.model;
 
-import br.com.unitins.ia.timetable.model.enums.DiaSemana;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,8 +12,14 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Teacher {
+public class Professor {
 
-    private String name;
-    private List<DiaSemana> daysAvailable = new ArrayList<>();
+    private String nome;
+    private List<HorarioAula> horarioAulas;
+
+    public List<Professor> criarCarga() {
+        List<Professor> professores = new ArrayList<>();
+        Professor p1 = new Professor();
+        return null;
+    }
 }

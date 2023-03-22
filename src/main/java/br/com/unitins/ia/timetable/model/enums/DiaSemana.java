@@ -1,6 +1,6 @@
 package br.com.unitins.ia.timetable.model.enums;
 
-public enum DayOfWeek {
+public enum DiaSemana {
     MONDAY,
     TUESDAY,
     WEDNESDAY,
